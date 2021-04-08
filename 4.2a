@@ -1,0 +1,13 @@
+from tkinter import *
+raam = Tk()
+raam.title("Maardu lipp")
+kõrgus = 700
+laius = 1100
+tahvel = Canvas(raam, width = laius, height= kõrgus)
+tahvel.pack()
+tahvel.create_rectangle(0, 0, laius, kõrgus / 3, fill="blue", width=0)
+tahvel.create_rectangle(0, kõrgus / 3, laius, kõrgus * 2 / 3, fill="white", width=0)
+tahvel.create_rectangle(0, kõrgus * 2 / 3, laius, kõrgus, fill="blue", width=0)
+
+raam.mainloop()
+
