@@ -1,0 +1,25 @@
+failNimi = input("Sisestage failinimi: ")
+fail = open(failNimi, encoding = "utf-8")
+text = fail.read()
+text = text.upper()
+uus_text = ""
+for i in text:
+    if i == "Ä":
+        i = i.replace("Ä", "AE")
+    elif i == "ä":
+        i = i.replace("ä", "AE")
+    elif i == "Õ":
+        i = i.replace("Õ", "OE")
+    elif i == "õ":
+        i = i.replace("õ", "OE")
+    elif i == "Ö":
+        i = i.replace("Ö", "OE")
+    elif i == "ö":
+        i = i.replace("ö", "OE")
+    elif i == "Ü":
+        i = i.replace("Ü", "UE")
+    elif i == "ü":
+        i = i.replace("ü", "UE")
+    uus_text += i
+fail.close()
+print(uus_text)
