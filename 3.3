@@ -1,0 +1,7 @@
+from random import randint
+täringuid = int(input("Sisesta täringute arv: "))
+suvaline_arv = randint(1, 6)
+while täringuid > 0:
+    suvaline_arv = randint(1, 6)
+    täringuid -= 1
+    print(suvaline_arv)
