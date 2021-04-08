@@ -1,0 +1,12 @@
+failinimi = input("Sisestage failinimi:")
+fail = open(failinimi, encoding="utf-8")
+lood = []
+for rida in fail:
+    lood.append(rida.strip())
+fail.close()
+number = 1
+for lugu in lood:
+    print(str(number) + ". " + lugu)
+    number += 1
+loonumber = int(input("Valige loo number"))
+print(lood[loonumber - 1])
