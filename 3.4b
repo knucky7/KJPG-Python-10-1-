@@ -1,0 +1,12 @@
+
+import random
+
+õunad = 14
+pöialpoisid = int(input("Palju pöialpoisse tahab õunu:"))
+random = random.SystemRandom()
+for x in range(pöialpoisid):
+    andmine= random.randint(1, 2)
+    print(andmine)
+    õunad = õunad - andmine
+
+print("Lumivalgekesele jäi {} õuna".format(õunad))
