@@ -1,0 +1,7 @@
+def tervitus(a):
+    print('Võõrustaja: "Tere!"\nTäna ' + str(a) + '. kord tervitada, mõtiskleb võõrustaja.\nKülaline: "Tere, suur tänu kutse eest!"')
+b = int(input("Sisestage külaliste arv: "))
+G = 0
+while G < b:
+    G += 1
+    tervitus(G)
