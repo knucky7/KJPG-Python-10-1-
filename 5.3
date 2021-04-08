@@ -1,0 +1,8 @@
+fail = open("konto.txt", encoding="utf-8")
+summad = []
+for rida in fail:
+    summad.append(float(rida))
+fail.close()
+for summa in summad:
+    if summa >= 0:
+        print(summa)
