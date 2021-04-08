@@ -1,0 +1,7 @@
+aasta = int(input("Sisestage aasta: "))
+fail = open("rebased.txt", encoding="utf-8")
+vastuvõetud = []
+for rida in fail:
+    vastuvõetud.append(int(rida))
+fail.close()
+print(vastuvõetud[aasta - 2011])
