@@ -1,0 +1,16 @@
+from random import randint
+valik = input("Kas soovite istekoha valida ('ise') või loosiga ('loos')?: ")
+if valik == "ise":
+    koht = input("Kas soovite istuda akna ääres ('aken') või mitte ('muu')?: ")
+    if koht == "aken":
+        print("Valisite ise. Aknakoht.")
+    else:
+        print("Valisite ise. Vahekäigukoht.")
+else:
+    if valik == "loos":
+       valik = randint(1, 3)
+    if valik == 1:
+        valik = str("Aknakoht")
+    elif valik == 2 or 3:
+        valik = str("Vahekäigukoht")
+        print("Istekoht loositi. " + valik)
