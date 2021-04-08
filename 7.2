@@ -1,0 +1,8 @@
+from datetime import datetime
+kuupäev = datetime.today()
+tekst = input("Sisesta ülesande tekst: ")
+fail = open("paevik.txt", "a")
+
+fail.writelines(str(kuupäev) + "\n")
+fail.writelines(tekst + "\n")
+fail.close()
