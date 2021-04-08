@@ -1,0 +1,11 @@
+from easygui import *
+arv = integerbox("Sisesta arv", lowerbound = 1, upperbound = 10)
+arv2 = integerbox("Sisesta arv", lowerbound = 1, upperbound = 10)
+tehe = ["+", "-", "*"]
+valik = buttonbox("Valige tehe", choices = "tehe")
+if valik == "+":
+    msgbox(arv + arv2)
+elif valik == "-":
+    msgbox(arv - arv2)
+if valik == "*":
+    msgbox(arv * arv2)
