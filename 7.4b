@@ -1,0 +1,8 @@
+from urllib.request import urlopen
+kuu = input("Sisestage kuu: ")
+paev = int(input("Sisestage päev: "))
+avamine = urlopen("http://kodu.ut.ee/~eno/mooc/" + kuu)
+bait = avamine.read()
+code = bait.decode()
+jarjend = code.splitlines()
+print(jarjend[paev - 1])
